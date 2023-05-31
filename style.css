@@ -1,0 +1,84 @@
+input{
+    margin:10px 0px;
+    border:1px solid black;
+    height:35px;
+    font-size: 17px;
+    border-radius: 5px;
+    width:100%;
+    box-sizing: border-box;
+}
+input:focus
+{
+    outline-color: red;
+}
+.heading{
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'kanit', serif;
+    letter-spacing: 2px;
+}
+form
+{
+    width:400px;
+
+}
+label{
+    font-size: 17px;
+    color:white;
+    margin-left: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+input[type=submit]
+{
+    width:30%;
+    margin-left:35%;
+}
+@media (max-width:500px){
+    h1{
+        font-size: 24px;
+    }
+    form{
+        width:300px;
+    }
+    
+}
+@media (max-width:350px)
+{
+    h1{
+font-size: 20px;
+    }
+    form{
+        width:250px;
+    }
+}
+@media (max-width:300px)
+{
+    form{
+        width:100%;
+    }
+}
+@media (max-width:280px)
+{
+    h1
+    {
+        font-size: 15px;
+    }
+    form{
+        width:100%;
+    }
+    input[type=submit]
+{
+    width:30%;
+    margin-left:35%;
+    font-size:13px;
+}
+
+}
