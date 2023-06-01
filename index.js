@@ -5,11 +5,11 @@ $(document).ready(function(){
         $("#submit").fadeOut(0);
         $(".loader").addClass("loader-visible");
         
-        setInterval(() => { $(".loader").removeClass("loader-visible"); }, 1000);
+        setTimeout(() => { $(".loader").removeClass("loader-visible"); }, 500);
         
-        setInterval(() => { $("p").addClass("visible"); }, 1000);
+        setTimeout(() => { $("p").addClass("visible"); }, 500);
         
-        setTimeout(() => { this.reset(); }, 500);
+        setTimeout(() => { this.reset(); }, 1000);
 
 
     });
