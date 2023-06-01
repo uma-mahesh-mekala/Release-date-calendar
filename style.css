@@ -40,7 +40,43 @@ input[type=submit]
 {
     width:30%;
     margin-left:35%;
+    cursor: pointer;
 }
+.hidden
+{
+    display: none;
+}
+p
+{
+    background-color: white;
+    padding:10px 20px;
+    font-size:large;
+    font-weight:800;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius:5px ;
+    display: none;
+}
+.visible{
+    display: block;
+}
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: spin 2s linear infinite;
+    display: none; /* By default, the loader is not displayed */
+  }
+.loader-visible{
+    display:block;
+}
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 @media (max-width:500px){
     h1{
         font-size: 24px;

@@ -1,9 +1,16 @@
-function formSubmit()
-{
-    var afterSubmit = document.getElementById("submit");
-    afterSubmit.css.animate.fadeout(100);
+$(document).ready(function(){
+    $('form').submit(function(e){
 
-    document.getElementById("form").reset();
-}
-var submitButton = document.getElementById("form");
-submitButton.addEventListener('submit', formSubmit);
+        e.preventDefault();
+        $("#submit").fadeOut(0);
+        $(".loader").addClass("loader-visible");
+        
+        setInterval(() => { $(".loader").removeClass("loader-visible"); }, 1000);
+        
+        setInterval(() => { $("p").addClass("visible"); }, 1000);
+        
+        setTimeout(() => { this.reset(); }, 500);
+
+
+    });
+  });
