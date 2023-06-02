@@ -44,6 +44,31 @@
       <label for="date">Date *</label> <br />
       <input type="date" id="date" required placeholder="eg: 27-oct-2014" />
       <br />
+      <label for="Genre">Genre</label> <br />
+      <select name="Genre" id="Genre">
+        <option value="Pop">Pop</option>
+        <option value="Rock">Rock</option>
+        <option value="hip hop">Hip Hop</option>
+        <option value="R & B">R&B(Rhythm and Blues)</option>
+        <option value="country">Country</option>
+        <option value="Jazz">Jazz</option>
+        <option value="blues">Blues</option>
+        <option value="electronics">Electronics</option>
+        <option value="classical">Classical</option>
+        <option value="reggae">Reggae</option>
+        <option value="folk">Folk</option>
+        <option value="punk">Punk</option>
+        <option value="Metal">Metal</option>
+        <option value="funk">Funk</option>
+        <option value="soul">Soul</option>
+        <option value="gospel">Gospel</option>
+        <option value="dance">Dance</option>
+        <option value="alternative">Alternative</option>
+        <option value="indie">Indie</option>
+        <option value="latin">Latin</option>
+        <option value="k-pop">K-pop</option>
+      </select>
+      <br />
       <label for="url">Url (Optional)</label><br />
       <input
         type="url"
@@ -57,7 +82,12 @@
         required
         placeholder="Wildest dreams"
       /><br />
-      <input type="submit" id="submit" />
+      <label for="image">Upload Picture :</label>
+      <div class="container">
+        <input type="file" id="image" name="image" accept="image/*" /> <br />
+        <img src="" alt="image preview" id="imagePreview" />
+      </div>
+      <input type="submit" id="submit" /> <br />
     </form>
     <div id="loader" class="loader"></div>
     <p>Thank You</p>

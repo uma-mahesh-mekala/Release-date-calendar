@@ -13,4 +13,20 @@ $(document).ready(function(){
 
 
     });
-  });
+    $("#image").change(function (e) {
+        var file = this.files[0];
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+            $("#imagePreview").attr("src", reader.result).show();
+            
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+        else {
+            $("i#magePreview").attr('src', '').hide();
+        }
+    });
+  });                                                                                                                                                                             

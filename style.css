@@ -1,4 +1,4 @@
-input{
+input,#Genre{
     margin:10px 0px;
     border:1px solid black;
     height:35px;
@@ -74,6 +74,16 @@ p
 ::placeholder{
     font-weight: lighter;
     font-size: 15px;
+}
+
+#imagePreview{
+    display:none;
+    width:200px;
+    height:200px;
+}
+.container{
+    width:100%;
+    display: flex;
 }
 
   
