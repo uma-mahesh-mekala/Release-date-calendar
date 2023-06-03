@@ -139,12 +139,33 @@ font-size: 20px;
     form{
         width:250px;
     }
+    .albumImage{
+        width:100px;
+        height:100px;
+    }
+    
+    .albumInfo{
+        color:white;
+        font-size: 14px;
+    }
+    body{
+        background-color: black;
+    }
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: 100px 150px;
+        grid-auto-rows: 120px;
+        gap:10px;
+        margin: 10px auto;
+    }
 }
 @media (max-width:300px)
 {
     form{
         width:100%;
     }
+   
 }
 @media (max-width:280px)
 {
