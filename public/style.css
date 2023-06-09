@@ -36,9 +36,11 @@ body{
     align-items: center;
     background-color: black;
 }
-input[type=submit]
+#submit
 {
     width:30%;
+    height:35px;
+    border-radius: 5px;
     margin-left:35%;
     cursor: pointer;
 }
@@ -53,6 +55,7 @@ input[type=submit]
     font-size:large;
     font-weight:800;
     font-family: 'Ubuntu', sans-serif;
+    color:black;
     border-radius:5px ;
     display: none;
 }
@@ -176,11 +179,12 @@ font-size: 20px;
     form{
         width:100%;
     }
-    input[type=submit]
+    #submit
 {
     width:30%;
     margin-left:35%;
     font-size:13px;
+    height:30px;
 }
 
 }
