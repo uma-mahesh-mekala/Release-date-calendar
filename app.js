@@ -12,12 +12,12 @@ const port = 3000;
 //     password: 'Mahesh@2001',
 //     database:'releases_db'
 // })
-connection.connect(function (err) { 
-    if (err) throw err;
-    console.log("connection is established");
+// connection.connect(function (err) { 
+//     if (err) throw err;
+//     console.log("connection is established");
 
-}
-)
+// }
+// )
 app.listen(port, () => { 
     console.log(`server stared at ${port}`);
 })
