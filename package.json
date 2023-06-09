@@ -1,0 +1,15 @@
+{
+  "name": "release-date-calendar",
+  "version": "1.0.0",
+  "description": "add song release dates and retrieve them",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mahesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
