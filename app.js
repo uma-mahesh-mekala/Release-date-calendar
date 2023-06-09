@@ -6,12 +6,12 @@ const path = require('path');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 const port = 3000;
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Mahesh@2001',
-    database:'releases_db'
-})
+// var connection = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password: 'Mahesh@2001',
+//     database:'releases_db'
+// })
 connection.connect(function (err) { 
     if (err) throw err;
     console.log("connection is established");
@@ -27,10 +27,10 @@ app.get("/", (req, res)=>{
 app.post("/", (req, res) => { 
     var postData = req.body;
     delete postData.submit;
-    connection.query('INSERT INTO releases SET?', postData, function (err, results) { 
-        if (err) throw err;
-        console.log("last record inserted at:", results.insertID);
-    })
+    // connection.query('INSERT INTO releases SET?', postData, function (err, results) { 
+    //     if (err) throw err;
+    //     console.log("last record inserted at:", results.insertID);
+    // })
     var artistName = req.body.artistName;
     var songTitle = req.body.songTitle;
     var date = (req.body.date).split('-').reverse().join('-h');
